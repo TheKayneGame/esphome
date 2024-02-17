@@ -32,3 +32,4 @@ async def to_code(config):
 
     cg.add(var.set_cold_white_temperature(config[CONF_COLD_WHITE_COLOR_TEMPERATURE]))
     cg.add(var.set_warm_white_temperature(config[CONF_WARM_WHITE_COLOR_TEMPERATURE]))
+    cg.add_library("makuna/NeoPixelBus", "2.7.3")
