@@ -11,7 +11,7 @@ from esphome.const import (
 
 CODEOWNERS = ["@thekaynegame"]
 
-color_temperature_ns = cg.esphome_ns.namespace("color_temperature")
+color_temperature_ns = cg.esphome_ns.namespace("ct_ws2811")
 CTLightWS2811 = color_temperature_ns.class_("CTLightWS2811", light.LightOutput)
 
 CONFIG_SCHEMA = cv.All(
